@@ -9,7 +9,12 @@ app.set('view engine','ejs');
 app.use(express.urlencoded({extended:true}));
 app.use(express.static("public"));
 mongoose.connect("mongodb+srv://admin-Nikhil:Test123@cluster0.gltgt.mongodb.net/todolistDB",{useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify:false});
-app.listen(3000);
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+app.listen(port);
+// app.listen(3000);
 const itemSchema=new mongoose.Schema({
     name:"String"
 });
