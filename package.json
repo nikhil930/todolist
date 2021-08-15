@@ -1,7 +1,7 @@
 {
   "name": "todolist-1",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "app1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,12 +11,10 @@
     "node": "14.17.0"
   },
   "dependencies": {
-    "ejs": "^3.1.6",
-    "express": "^4.17.1",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
     "lodash": "^4.17.21",
-    "mongoose": "^5.13.2",
-    "nodemon": "^2.0.11"
-  },
-  "devDependencies": {},
-  "description": ""
-}
+    "mongoose": "^5.13.0",
+    "nodemon": "^2.0.8"
+  }
